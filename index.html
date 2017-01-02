@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Trix Editor</title>
+    <link rel="stylesheet" type="text/css" href="dist/trix.css">
+    <script type="text/javascript" src="dist/trix.js"></script>
+    <style>
+     @import url(https://fonts.googleapis.com/earlyaccess/droidarabicnaskh.css); 
+     html, body {
+       font-family: 'Droid Arabic Naskh', serif; 
+       height: 100%;
+       margin: 0px;
+       padding: 0px;
+     }
+     .container {
+       display: flex;
+       align-items: center;
+       justify-content: center;
+       height: 90%;
+     }
+     .editor {
+       width: 700px;
+     }
+     trix-editor {
+       height: 250px;
+     }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="editor">
+        <trix-editor></trix-editor>
+      </div>
+    </div>
+  </body>
+</html>
