@@ -22,14 +22,15 @@ class Trix.BlockView extends Trix.ObjectView
     if @attributes.length
       nodes
     else
-      element = makeElement(Trix.config.blockAttributes.default.tagName)
+      defaultElement = Trix.config.blockAttributes.default
+      element = makeElement(defaultElement.tagName, defaultElement.options)
       element.appendChild(node) for node in nodes
       [element]
 
   createContainerElement: (depth) ->
     attribute = @attributes[depth]
     config = getBlockConfig(attribute)
-    makeElement(config.tagName)
+    makeElement(config.tagName, config.options)
 
   # A single <br> at the end of a block element has no visual representation
   # so add an extra one.

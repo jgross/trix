@@ -2,14 +2,20 @@ Trix.config.blockAttributes = attributes =
   default:
     tagName: "div"
     parse: false
+    options:
+      dir: "auto"
   quote:
     tagName: "blockquote"
     nestable: true
+    options:
+      dir: "auto"
   heading1:
     tagName: "h1"
     terminal: true
     breakOnReturn: true
     group: false
+    options:
+      dir: "auto"
   code:
     tagName: "pre"
     terminal: true
@@ -18,6 +24,8 @@ Trix.config.blockAttributes = attributes =
   bulletList:
     tagName: "ul"
     parse: false
+    options:
+      dir: "auto"
   bullet:
     tagName: "li"
     listAttribute: "bulletList"
@@ -28,6 +36,8 @@ Trix.config.blockAttributes = attributes =
   numberList:
     tagName: "ol"
     parse: false
+    options:
+      dir: "auto"
   number:
     tagName: "li"
     listAttribute: "numberList"
